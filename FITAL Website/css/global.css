@@ -1,0 +1,348 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  background: #191a1d;
+  color: #d9d9d9;
+  padding: 1rem 0.5rem 2rem 0.5rem;
+  text-align: center;
+  margin: 2rem;
+  border-radius: 32px;
+  width: 35%;
+  box-shadow: 0 0 3px #000000;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+}
+
+select {
+  width: 90%;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+}
+
+label {
+  margin-bottom: 0.6rem;
+  margin-right: 0.4rem;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1.25rem;
+  padding: 0.6rem 2rem;
+  border-radius: 16px;
+  letter-spacing: 0.5px;
+  color: #1a0c0c;
+  box-shadow: 0 0 3px #d11414;
+}
+
+.btn-blue {
+  background: #e41437;
+}
+
+.btn-blue:hover {
+  background: #e0e1e6;
+  border: 1px solid #f51e1e;
+}
+
+.btn-dark {
+  background: #191a1d;
+}
+
+.btn-dark:hover {
+  background: #f20f0f;
+  color: #000000;
+  border: 1px solid #dd0707;
+}
+
+.page {
+  padding: 4rem 15% 4rem 15%;
+  text-align: center;
+}
+
+.page-dark {
+  background: #191a1d;
+  color: #ffffff;
+}
+
+.page-light {
+  background: #efeaea;
+  color: #000000;
+}
+
+.page-dark h1 {
+  color: #eb5252;
+  text-align: center;
+}
+
+.page-light h1 {
+  color: #000000;
+  text-align: center;
+}
+
+.list-box {
+  text-align: left;
+  width: 35%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: baseline;
+}
+
+.v-container {
+  color: #ffffff;
+  text-shadow: 2px 2px black;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#bmi-result,
+#calorie-result {
+  padding: 0.5rem;
+  font-weight: normal;
+  background: #c70606;
+  box-shadow: 0 0 4px #000000;
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+/* Navbar */
+
+#navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  width: 100%;
+  background:linear-gradient(to right, #ff0000 0%, #333300 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 4px;
+}
+
+#navbar a h2 {
+  color: #ffffff;
+  border-bottom-style: solid;
+}
+
+#navbar a h2:hover {
+  border-color: #ec1111;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar ul li a {
+  color: #d9d9d9;
+  justify-content: center;
+  padding: 0.25rem;
+  margin: 0.5rem 0.5rem;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  border-bottom-style: solid;
+  color: #ffffff;
+  border-bottom-color: #dc1728;
+}
+
+/* About */
+
+#about{
+  background-image: url("../img/WhatsApp\ Image\ 2023-05-19\ at\ 14.34.19.jpg");
+  background-size: cover;
+  background-position: left;
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+  text-shadow: 1px 1px #000000;
+}
+
+#about .container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+}
+
+
+#about p {
+  color: #070606;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#about a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about ul {
+  color: #ffffff;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+#about ul li::before {
+  content: "\1f87a"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #dc1717; /* Change the color */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-right: 0.5em;
+}
+
+#features ul li::before {
+  content: "\1f87a"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #d42020; /* Change the color */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-right: 0.5em;
+}
+features
+#features ul,li{
+  list-style-type: none;
+}
+#about .btn{
+  box-shadow: 0 0 8px #000000;
+}
+
+/* BMI Calculator*/
+
+#bmi-calculator ul {
+  padding-left: 2rem;
+}
+
+/* Caloric Needs */
+
+#calorie-form {
+  border: 2px solid #dc1717;
+}
+
+#caloric-needs ul {
+  margin-left: 2rem;
+  color: #e70808;
+}
+
+#male,
+#female {
+  width: 10%;
+}
+
+/* Workout Planning */
+
+#workout-planning {
+  display: flex;
+  flex-direction: column;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+#workout-planning p {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+#workout-planning h2 {
+  text-align: left;
+}
+
+.slide {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 4px #000000;
+  /* width: 48rem;
+  height: 27rem; */
+}
+
+.slide table {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-shadow: 0 0 4px #000000;
+  margin: 4rem auto 4rem auto;
+  width: 100;
+  font-size: 10pt;
+  border-collapse: collapse;
+}
+
+.slide table,
+th,
+td {
+  border: 1px solid #dc1717;
+}
+
+#gaining-muscle {
+  background-image: url("../img/gaining-muscle.jpg");
+}
+
+#losing-weight {
+  background-image: url("../img/losing-weight.jpg");
+}
+
+#building-strength{
+  background-image: url("../img/building-strength.jpg");
+}
+
+#building-stamina{
+  background-image: url("../img/building-stamina.jpg");
+}
+
+#street-workout{
+  background-image: url("../img/street-workout.jpg");
+}
+
+/* Exercise Guide */
+
+#exercise-guide select {
+  width: 30%;
+}
+/* Trainers */
+#trainers tr,td{
+  border: none;
+  padding:30px;
+  padding-left: 50px;
+}
+
+/* Contact */
+
+#contact {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+#contact a {
+  color: #e61212;
+}
+
+#contact a:hover {
+  color: #ef0e25;
+  text-decoration: underline;
+}
